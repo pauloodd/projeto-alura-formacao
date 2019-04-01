@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ceep</string>
+    <string name="pref_text">ProjetoAlura</string>
+    <string name="feedback_descricao">Escreva o seu Feedback</string>
+    <string name="feedback_titulo">Deixe o seu Feedback! =)</string>
+    <string name="email">E-mail</string>
+    <string name="feedback_texto_rodape">Envie dúvidas ou sugestões sobre sua experiência com o Ceep. Usaremos as informações fornecidas para aprimorar a experiência da App.</string>
+</resources>
+

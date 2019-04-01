@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.alura.ceep.ui.activity.FeedbackActivity">
+
+
+    <ImageView
+        android:id="@+id/banner_feedback"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/feedback_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_feedback_titulo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="@color/branco"
+        android:background="#8000"
+        app:layout_constraintBottom_toBottomOf="@id/banner_feedback"
+        app:layout_constraintStart_toStartOf="@id/banner_feedback"
+        android:text="@string/feedback_titulo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_feedback_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/banner_feedback"
+        app:layout_constraintStart_toStartOf="@id/banner_feedback"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_feedback_descricao"
+        app:layout_constraintTop_toBottomOf="@id/activity_feedback_email"
+        app:layout_constraintStart_toStartOf="@id/banner_feedback"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/feedback_descricao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/activity_feedback_texto_rodape"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/activity_feedback_descricao"
+        app:layout_constraintStart_toStartOf="@id/banner_feedback"
+        android:text="@string/feedback_texto_rodape" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
